@@ -20,10 +20,10 @@ def enviar_backup_email():
         with open(caminho_arquivo, "rb") as arquivo:
             conteudo = arquivo.read()
 
-        corpo_email = "<p>Backup do banco pessoas.db, feito com sqlite para api de icnvararuama.</p>" \
+        corpo_email = "<p>Backup do banco pessoas.db, feito com sqlite para api de Exemplo alocada no render.</p>" \
                       f"<p>{data_e_hora_formatadas}.</p>"
 
-        destinatarios = ["carlos.spadilha@yahoo.com.br", "Cadastroicnv@gmail.com"]
+        destinatarios = ["carlos.spadilha@yahoo.com.br"]
 
         # Crie um objeto MIMEMultipart
         msg = MIMEMultipart()
